@@ -2,9 +2,10 @@ import { Component, signal, effect, computed } from '@angular/core';
 import { Card } from '../card/card';
 
 @Component({
-    selector: 'app-card-list',
-    imports: [Card],
-    templateUrl: './card-list.html',
+selector: 'app-card-list',
+standalone: true,
+imports: [Card],
+templateUrl: './card-list.html',
 })
 export class CardList {
 
